@@ -1,0 +1,559 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Viksit Bharat — India's Journey of Innovation &amp; Defence</title>
+<meta name="description" content="From 1947 to 2047: India's rise in space, defence and technology. A project by Ridam Aggarwal, Class X-E.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://upload.wikimedia.org" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&family=Noto+Sans+Devanagari:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<!-- loading screen -->
+<div class="loader" id="loader">
+  <div class="loader__flag" aria-hidden="true">
+    <i class="band band--saffron"></i>
+    <i class="band band--white"></i>
+    <i class="band band--green"></i>
+    <span class="loader__chakra"></span>
+  </div>
+  <p class="loader__deva" lang="hi">विकसित भारत</p>
+  <p class="loader__sub">1947 &mdash; 2047</p>
+  <div class="loader__bar" aria-hidden="true"><span></span></div>
+</div>
+
+<div class="cur" id="curRing" aria-hidden="true"></div>
+<div class="cur-dot" id="curDot" aria-hidden="true"></div>
+
+<a class="skip" href="#journey">Skip to content</a>
+
+<div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+<!-- top navbar -->
+<nav class="nav" id="nav">
+  <a class="nav__brand" href="#top">
+    <span class="nav__chakra" aria-hidden="true"></span>
+    <span>Viksit Bharat</span>
+  </a>
+  <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">
+    <span aria-hidden="true"></span><span class="sr">Menu</span>
+  </button>
+  <div class="nav__links" id="navLinks">
+    <a href="#journey">Journey</a>
+    <a href="#numbers">Numbers</a>
+    <a href="#defence">Defence</a>
+    <a href="#vision">Vision 2047</a>
+    <a href="#sources">Sources</a>
+  </div>
+</nav>
+
+<!-- main title block -->
+<header class="hero" id="top">
+  <div class="hero__media" aria-hidden="true">
+    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Chandrayaan-3%2C_LVM3_M4_lifting_off_from_SDSC_SHAR.jpg?width=1280"
+         alt="" fetchpriority="high">
+  </div>
+  <div class="aurora" aria-hidden="true">
+    <i class="aurora__blob aurora__blob--saffron"></i>
+    <i class="aurora__blob aurora__blob--blue"></i>
+    <i class="aurora__blob aurora__blob--green"></i>
+  </div>
+
+  <div class="hero__inner">
+    <p class="tag up up-1"><span class="dot"></span>Ridam Aggarwal &middot; Class X-E</p>
+
+    <h1 class="hero__title up up-2">
+      A hundred years<br>
+      <span class="grad">in the making</span>
+    </h1>
+
+    <p class="hero__deva up up-3" lang="hi">विकसित भारत &middot; 2047</p>
+
+    <p class="hero__sub up up-4">
+      In 1947 India could not build a satellite, a fighter jet or a chip. Today it lands on the
+      Moon's south pole, exports defence equipment to more than eighty countries, and runs the
+      world's busiest payments network. This is that story — and the twenty-one years left to
+      finish it.
+    </p>
+
+    <div class="hero__cta up up-5">
+      <a class="btn btn--primary" href="#journey">Explore the journey<span aria-hidden="true">→</span></a>
+      <a class="btn btn--ghost" href="#defence">Operation Sindoor</a>
+    </div>
+
+    <div class="hero__chips up up-6">
+      <div class="chip">
+        <b class="count" data-to="79">0</b>
+        <span>years since 1947</span>
+      </div>
+      <div class="chip">
+        <b class="count" data-to="4" data-suffix="th">0</b>
+        <span>nation to dock in orbit</span>
+      </div>
+      <div class="chip">
+        <b class="count" data-to="80" data-prefix="+">0</b>
+        <span>countries buy Indian defence</span>
+      </div>
+    </div>
+  </div>
+
+</header>
+
+<main>
+
+<!-- the timeline part -->
+<section class="section" id="journey">
+  <div class="wrap">
+    <div class="head reveal">
+      <p class="eyebrow">01 &middot; The Journey</p>
+      <h2>One century, drawn as a wheel</h2>
+      <p class="lede">
+        The Ashoka Chakra has twenty-four spokes. Here it becomes a clock: the hundred years from
+        1947 to 2047 wrapped once around the circle, every milestone pinned where it truly falls.
+        Watch what happens after 2008 — the markers crowd together, because that is when India's
+        pace changed.
+      </p>
+    </div>
+
+    <div class="journey">
+      <div class="journey__dial">
+        <div class="dial-card glass">
+          <div class="dial-frame">
+            <div class="dial-glow" aria-hidden="true"></div>
+            <svg class="dial" id="dial" viewBox="0 0 400 400" aria-hidden="true"></svg>
+            <div class="dial-readout" aria-hidden="true">
+              <span class="dial-readout__year" id="readoutYear">1947</span>
+              <span class="dial-readout__title" id="readoutTitle">Independence</span>
+            </div>
+          </div>
+          <div class="dial-bar" aria-hidden="true">
+            <span class="dial-bar__fill" id="dialFill"></span>
+          </div>
+          <p class="dial-meta" aria-hidden="true">
+            <span><i class="k k--done"></i>Achieved</span>
+            <span><i class="k k--open"></i>Still ahead</span>
+          </p>
+        </div>
+      </div>
+
+      <ol class="track" id="milestones">
+
+        <li class="mile reveal" data-year="1947" data-title="Independence">
+          <span class="mile__node" aria-hidden="true"></span>
+          <article class="card glass">
+            <p class="mile__year">1947</p>
+            <h3>Independence</h3>
+            <p>The clock starts on 15 August. Every target that follows is measured against 2047, the hundredth year.</p>
+          </article>
+        </li>
+
+        <li class="mile reveal" data-year="1969" data-title="ISRO founded">
+          <span class="mile__node" aria-hidden="true"></span>
+          <article class="card glass card--img">
+            <div class="card__img">
+              <img loading="lazy" alt="A PSLV rocket standing on the launch pad at Sriharikota."
+                   src="https://commons.wikimedia.org/wiki/Special:FilePath/PSLV_C42_First_Launch_Pad_Panorama.jpg?width=800">
+            </div>
+            <div class="card__body">
+              <p class="mile__year">1969</p>
+              <h3>ISRO is founded</h3>
+              <p>Set up on 15 August 1969 — the same date, twenty-two years on. India had no rocket of its own at the time.</p>
+            </div>
+          </article>
+        </li>
+
+        <li class="mile reveal" data-year="1975" data-title="First satellite">
+          <span class="mile__node" aria-hidden="true"></span>
+          <article class="card glass">
+            <p class="mile__year">1975</p>
+            <h3>Aryabhata, the first satellite</h3>
+            <p>Built in Bengaluru, launched on a Soviet rocket. The spacecraft was Indian; the ride was not. Closing that gap took another fifteen years.</p>
+          </article>
+        </li>
+
+        <li class="mile reveal" data-year="1998" data-title="Pokhran-II">
+          <span class="mile__node" aria-hidden="true"></span>
+          <article class="card glass">
+            <p class="mile__year">1998</p>
+            <h3>Pokhran-II</h3>
+            <p>Five tests in May 1998. Sanctions followed — and with them a long push to build at home what could no longer be bought abroad.</p>
+          </article>
+        </li>
+
+        <li class="mile reveal" data-year="2008" data-title="Water on the Moon">
+          <span class="mile__node" aria-hidden="true"></span>
+          <article class="card glass">
+            <p class="mile__year">2008</p>
+            <h3>Chandrayaan-1 finds water</h3>
+            <p>India's first lunar mission detected water molecules on the Moon — a result that redirected lunar science worldwide.</p>
+          </article>
+        </li>
+
+        <li class="mile reveal" data-year="2014" data-title="Mars, first try">
+          <span class="mile__node" aria-hidden="true"></span>
+          <article class="card glass card--img">
+            <div class="card__img">
+              <img loading="lazy" alt="Artist's impression of the Mars Orbiter Mission spacecraft above Mars."
+                   src="https://commons.wikimedia.org/wiki/Special:FilePath/Mars_Orbiter_Mission_-_India_-_ArtistsConcept.jpg?width=800">
+            </div>
+            <div class="card__body">
+              <p class="mile__year">2014</p>
+              <h3>Mars, on the first attempt</h3>
+              <p>The Mars Orbiter Mission entered orbit on 24 September 2014. No other country had reached Mars on its first try.</p>
+            </div>
+          </article>
+        </li>
+
+        <li class="mile reveal" data-year="2016" data-title="UPI launched">
+          <span class="mile__node" aria-hidden="true"></span>
+          <article class="card glass">
+            <p class="mile__year">2016</p>
+            <h3>UPI launched</h3>
+            <p>A public payments rail, free to use. Ten years on it carries about 81% of India's digital payments.<a class="cite" href="#src-6"><sup>6</sup></a></p>
+          </article>
+        </li>
+
+        <li class="mile reveal" data-year="2022" data-title="INS Vikrant">
+          <span class="mile__node" aria-hidden="true"></span>
+          <article class="card glass card--img">
+            <div class="card__img">
+              <img loading="lazy" alt="The aircraft carrier INS Vikrant at sea during fleet operations."
+                   src="https://commons.wikimedia.org/wiki/Special:FilePath/Vikrant_Fleet_operation_1.jpg?width=800">
+            </div>
+            <div class="card__body">
+              <p class="mile__year">2022</p>
+              <h3>INS Vikrant commissioned</h3>
+              <p>The first aircraft carrier designed and built in India. Roughly 76% of it was sourced domestically.</p>
+            </div>
+          </article>
+        </li>
+
+        <li class="mile reveal" data-year="2023" data-title="Lunar south pole">
+          <span class="mile__node" aria-hidden="true"></span>
+          <article class="card glass card--img card--hero">
+            <div class="card__img">
+              <img loading="lazy" alt="The Vikram lander photographed on the lunar surface by the Pragyan rover."
+                   src="https://commons.wikimedia.org/wiki/Special:FilePath/Chandrayaan%203%20Vikram%20lander%20stereo%20(53167467822).png?width=900">
+            </div>
+            <div class="card__body">
+              <p class="mile__year">2023</p>
+              <h3>Chandrayaan-3 lands at the lunar south pole</h3>
+              <p>23 August 2023 — the first landing anywhere near it. The ChaSTE probe drilled ten centimetres down and found sub-zero soil below eight centimetres, in two distinct layers.<a class="cite" href="#src-7"><sup>7</sup></a></p>
+            </div>
+          </article>
+        </li>
+
+        <li class="mile reveal" data-year="2024" data-title="Docking in orbit">
+          <span class="mile__node" aria-hidden="true"></span>
+          <article class="card glass card--img">
+            <div class="card__img">
+              <img loading="lazy" alt="The Aditya-L1 solar observatory during assembly before launch."
+                   src="https://commons.wikimedia.org/wiki/Special:FilePath/Aditya_L1_during_pre_launch_assembley.jpg?width=800">
+            </div>
+            <div class="card__body">
+              <p class="mile__year">2024</p>
+              <h3>Aditya-L1 reaches the Sun's L1 point, SpaDeX docks</h3>
+              <p>India's first solar observatory settled into orbit in January. By December, India became the fourth country able to dock two spacecraft — the technique a space station depends on.<a class="cite" href="#src-7"><sup>7</sup></a></p>
+            </div>
+          </article>
+        </li>
+
+        <li class="mile reveal" data-year="2025" data-title="Operation Sindoor">
+          <span class="mile__node" aria-hidden="true"></span>
+          <article class="card glass">
+            <p class="mile__year">2025</p>
+            <h3>Operation Sindoor</h3>
+            <p>7 May 2025, a tri-service response to the Pahalgam attack — and the first real test of India's networked air defence. <a href="#defence">See how it worked →</a></p>
+          </article>
+        </li>
+
+        <li class="mile reveal" data-year="2026" data-title="Made in India chips">
+          <span class="mile__node" aria-hidden="true"></span>
+          <article class="card glass card--img">
+            <div class="card__img">
+              <img loading="lazy" alt="A silicon semiconductor wafer patterned with chips."
+                   src="https://commons.wikimedia.org/wiki/Special:FilePath/Wafer_20110212.jpg?width=800">
+            </div>
+            <div class="card__body">
+              <p class="mile__year">2026</p>
+              <h3>The first commercial Indian chips ship</h3>
+              <p>Kaynes Semicon's Sanand plant reached commercial production in March 2026 — fourteen months after breaking ground.<a class="cite" href="#src-5"><sup>5</sup></a></p>
+            </div>
+          </article>
+        </li>
+
+        <li class="mile mile--open reveal" data-year="2047" data-title="The target">
+          <span class="mile__node" aria-hidden="true"></span>
+          <article class="card glass card--open">
+            <p class="mile__year">2047</p>
+            <h3>Viksit Bharat</h3>
+            <p>Not reached, and not guaranteed. Everything above was built. Everything after is still a plan. <a href="#vision">What the plan says →</a></p>
+          </article>
+        </li>
+
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- stats and numbers -->
+<section class="section section--alt" id="numbers">
+  <div class="wrap">
+    <div class="head reveal">
+      <p class="eyebrow">02 &middot; The Numbers</p>
+      <h2>Self-reliance, measured</h2>
+      <p class="lede">
+        <span class="deva" lang="hi">आत्मनिर्भरता</span> is easy to claim and hard to prove.
+        These are the figures the Ministry of Defence and MeitY actually published.
+      </p>
+    </div>
+
+    <div class="bigstats">
+      <article class="bigstat glass reveal">
+        <p class="bigstat__fig"><span class="count" data-to="38424" data-prefix="₹" data-comma="in">0</span><em>crore</em></p>
+        <h3>Defence exports, FY 2025–26</h3>
+        <p>Up 62.7% in a single year — the largest jump ever recorded — to more than 80 countries.<a class="cite" href="#src-4"><sup>4</sup></a></p>
+        <div class="mini">
+          <div class="mini__row"><span>FY22</span><i style="--w:33"></i><b>12,800</b></div>
+          <div class="mini__row"><span>FY25</span><i style="--w:61"></i><b>23,622</b></div>
+          <div class="mini__row mini__row--hi"><span>FY26</span><i style="--w:100"></i><b>38,424</b></div>
+        </div>
+      </article>
+
+      <article class="bigstat glass reveal">
+        <p class="bigstat__fig"><span class="count" data-to="178" data-prefix="₹">0</span><em>thousand crore</em></p>
+        <h3>Made in India, FY 2025–26</h3>
+        <p>Domestic defence production, up from ₹46,429 crore in 2014–15 — a 3.8× rise in eleven years. Private firms now hold 24% of it.<a class="cite" href="#src-3"><sup>3</sup></a></p>
+        <div class="mini">
+          <div class="mini__row"><span>2014–15</span><i style="--w:26"></i><b>46,429</b></div>
+          <div class="mini__row mini__row--hi"><span>2025–26</span><i style="--w:100"></i><b>1,78,000</b></div>
+        </div>
+      </article>
+    </div>
+
+    <div class="tiles">
+      <article class="tile glass reveal">
+        <span class="tile__ico" aria-hidden="true">₹</span>
+        <p class="tile__fig"><span class="count" data-to="24162" data-comma="in">0</span> crore</p>
+        <h3>UPI transactions in one year</h3>
+        <p>About 81% of every digital payment made in India, on a rail that is free to use.<a class="cite" href="#src-6"><sup>6</sup></a></p>
+      </article>
+      <article class="tile glass reveal">
+        <span class="tile__ico" aria-hidden="true">◈</span>
+        <p class="tile__fig">₹<span class="count" data-to="164" data-decimal="2">0</span> lakh crore</p>
+        <h3>Committed to making chips</h3>
+        <p>Across 12 approved semiconductor plants. Mission 2.0 now targets equipment, materials and Indian chip designs.<a class="cite" href="#src-5"><sup>5</sup></a></p>
+      </article>
+      <article class="tile glass reveal">
+        <span class="tile__ico" aria-hidden="true">⚡</span>
+        <p class="tile__fig">₹<span class="count" data-to="65">0</span> / hour</p>
+        <h3>What AI compute costs a startup</h3>
+        <p>Under the IndiaAI Mission — over ₹10,000 crore, backing 15 Indian foundation models.<a class="cite" href="#src-6"><sup>6</sup></a></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- defence stuff -->
+<section class="section" id="defence">
+  <div class="wrap">
+    <div class="head reveal">
+      <p class="eyebrow">03 &middot; Defence</p>
+      <h2>Operation Sindoor, and the systems behind it</h2>
+      <p class="lede">
+        On 22 April 2025, terrorists killed twenty-five Indians and one Nepali citizen at Pahalgam.
+        What followed was a response — and, for the first time, a full test of technology India had
+        spent a decade building.
+      </p>
+    </div>
+
+    <ol class="timeline reveal">
+      <li>
+        <p class="timeline__when">22 April 2025</p>
+        <p>Terrorists attacked civilians at Pahalgam. Twenty-five Indians and one Nepali citizen were killed.<a class="cite" href="#src-1"><sup>1</sup></a></p>
+      </li>
+      <li>
+        <p class="timeline__when">7 May 2025 &middot; 01:05 hrs</p>
+        <p>Operation Sindoor began. Nine sites of terrorist infrastructure in Pakistan and Pakistan-occupied Jammu and Kashmir were struck. The Ministry of Defence stated that no Pakistani military facilities were targeted.<a class="cite" href="#src-1"><sup>1</sup></a></p>
+      </li>
+      <li>
+        <p class="timeline__when">The days after</p>
+        <p>Drones and loitering munitions came the other way. They were stopped less by guns than by software — two Indian systems that turn scattered radars into a single shared picture.<a class="cite" href="#src-8"><sup>8</sup></a></p>
+      </li>
+    </ol>
+
+    <div class="chain glass reveal">
+      <div class="chain__head">
+        <h3>How a networked air defence actually works</h3>
+        <p>Tap a stage. <b>Akashteer</b> does this for the Army, <b>IACCS</b> for the Air Force.</p>
+      </div>
+
+      <div class="chain__viz">
+        <svg viewBox="0 0 640 150" class="chain__svg" aria-hidden="true">
+          <defs>
+            <linearGradient id="wire" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%"   stop-color="var(--saffron)"/>
+              <stop offset="100%" stop-color="var(--blue)"/>
+            </linearGradient>
+          </defs>
+          <g class="chain__wires">
+            <path d="M110 75 H190"/><path d="M270 75 H350"/><path d="M430 75 H510"/>
+          </g>
+          <g class="chain__nodes">
+            <g data-node="0"><circle cx="70"  cy="75" r="38"/><text x="70"  y="82">01</text></g>
+            <g data-node="1"><circle cx="230" cy="75" r="38"/><text x="230" y="82">02</text></g>
+            <g data-node="2"><circle cx="390" cy="75" r="38"/><text x="390" y="82">03</text></g>
+            <g data-node="3"><circle cx="550" cy="75" r="38"/><text x="550" y="82">04</text></g>
+          </g>
+        </svg>
+      </div>
+
+      <div class="chain__tabs" role="tablist" aria-label="Stages of a networked air-defence engagement">
+        <button role="tab" id="tab-0" aria-controls="panel-0" aria-selected="true"  data-stage="0">Detect</button>
+        <button role="tab" id="tab-1" aria-controls="panel-1" aria-selected="false" data-stage="1" tabindex="-1">Fuse</button>
+        <button role="tab" id="tab-2" aria-controls="panel-2" aria-selected="false" data-stage="2" tabindex="-1">Decide</button>
+        <button role="tab" id="tab-3" aria-controls="panel-3" aria-selected="false" data-stage="3" tabindex="-1">Engage</button>
+      </div>
+
+      <div class="chain__panels">
+        <div role="tabpanel" id="panel-0" aria-labelledby="tab-0" tabindex="0">
+          <p><b>Detect.</b> Radars, sensors and observation posts each catch part of what is coming. On its own, every one of them holds an incomplete — and slightly different — story.</p>
+        </div>
+        <div role="tabpanel" id="panel-1" aria-labelledby="tab-1" tabindex="0" hidden>
+          <p><b>Fuse.</b> Akashteer and IACCS merge those feeds into one live picture, so a single drone reported by four radars is understood as one drone, not four.</p>
+        </div>
+        <div role="tabpanel" id="panel-2" aria-labelledby="tab-2" tabindex="0" hidden>
+          <p><b>Decide.</b> Every track is classified and handed to whichever weapon is best placed to take it. Automating this is what shrinks the response from minutes to seconds.</p>
+        </div>
+        <div role="tabpanel" id="panel-3" aria-labelledby="tab-3" tabindex="0" hidden>
+          <p><b>Engage.</b> The assigned system fires. Through Operation Sindoor this chain intercepted drones, missiles, micro-UAVs and loitering munitions.<a class="cite" href="#src-8"><sup>8</sup></a></p>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="rail-title reveal">Built in India</h3>
+  </div>
+
+  <div class="marquee reveal" aria-label="Indian defence platforms">
+    <div class="marquee__row" id="marqueeRow">
+      <figure class="plate">
+        <img loading="lazy" alt="A Tejas fighter taking off with afterburner lit."
+             src="https://commons.wikimedia.org/wiki/Special:FilePath/Tejas_takeoff_from_INS_Vikrant_with_afterburner_on.jpg?width=800">
+        <figcaption><b>Tejas Mk-1A</b><span>First indigenous 4.5-gen fighter</span></figcaption>
+      </figure>
+      <figure class="plate">
+        <img loading="lazy" alt="BrahMos missile launchers on parade."
+             src="https://commons.wikimedia.org/wiki/Special:FilePath/BrahMos_missiles_during_rehearsal_of_Republic_Day_Parade_2018.jpg?width=800">
+        <figcaption><b>BrahMos</b><span>Among the fastest cruise missiles in service</span></figcaption>
+      </figure>
+      <figure class="plate">
+        <img loading="lazy" alt="An Akash surface-to-air missile launcher on parade."
+             src="https://commons.wikimedia.org/wiki/Special:FilePath/Akash_missile_Republic_Day_Parade_2025.jpg?width=800">
+        <figcaption><b>Akash-NG</b><span>Air defence, faster response and tracking</span></figcaption>
+      </figure>
+      <figure class="plate">
+        <img loading="lazy" alt="A DRDO anti-stealth VHF radar array."
+             src="https://commons.wikimedia.org/wiki/Special:FilePath/DRDO_Anti-Stealth_VHF_Radar.jpg?width=800">
+        <figcaption><b>DRDO radars</b><span>The sensors that feed the network</span></figcaption>
+      </figure>
+      <figure class="plate">
+        <img loading="lazy" alt="The aircraft carrier INS Vikrant refuelling at sea."
+             src="https://commons.wikimedia.org/wiki/Special:FilePath/INS_Vikrant_Fleet_Operation_4.jpg?width=800">
+        <figcaption><b>INS Vikrant</b><span>First carrier designed and built in India</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- 2047 cards -->
+<section class="section section--alt" id="vision">
+  <div class="wrap">
+    <div class="head reveal">
+      <p class="eyebrow">04 &middot; Vision 2047</p>
+      <h2>What the last twenty-one years are for</h2>
+      <p class="lede">
+        Viksit Bharat means a developed India by 2047, the hundredth year of independence.
+        NITI Aayog names four groups it has to work for — and an economy of about
+        $30 trillion to pay for it.<a class="cite" href="#src-9"><sup>9</sup></a>
+      </p>
+    </div>
+
+    <div class="pillars">
+      <article class="pillar glass reveal">
+        <p class="pillar__deva" lang="hi">युवा</p>
+        <h3>Yuva &middot; The young</h3>
+        <p>Education and real work for the largest working-age population on earth.</p>
+      </article>
+      <article class="pillar glass reveal">
+        <p class="pillar__deva" lang="hi">गरीब</p>
+        <h3>Garib &middot; The poor</h3>
+        <p>Extreme poverty ended, not merely reduced.</p>
+      </article>
+      <article class="pillar glass reveal">
+        <p class="pillar__deva" lang="hi">अन्नदाता</p>
+        <h3>Annadata &middot; Farmers</h3>
+        <p>Higher yields and incomes that hold up against a changing climate.</p>
+      </article>
+      <article class="pillar glass reveal">
+        <p class="pillar__deva" lang="hi">नारी</p>
+        <h3>Nari &middot; Women</h3>
+        <p>Full participation in the economy, not partial.</p>
+      </article>
+    </div>
+
+    <div class="closing glass reveal">
+      <div class="closing__img">
+        <img loading="lazy" alt="The Bengaluru skyline at dusk."
+             src="https://commons.wikimedia.org/wiki/Special:FilePath/Bengaluru_Skyline_from_Tata_Promont.jpg?width=800">
+      </div>
+      <div class="closing__body">
+        <h3>Seventy-nine down. Twenty-one to go.</h3>
+        <p>
+          Those seventy-nine years produced a lunar landing, a home-built carrier, a payments
+          system the world now copies, and the first Indian chips. The last stretch of the wheel is
+          still drawn as a dashed line — because nobody has walked it yet.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- links at the bottom -->
+<section class="section" id="sources">
+  <div class="wrap">
+    <div class="head reveal">
+      <p class="eyebrow">05 &middot; Sources</p>
+      <h2>Where every figure came from</h2>
+      <p class="lede">Every number on this page is linked to the government release it came from.</p>
+    </div>
+
+    <ol class="srclist reveal">
+      <li id="src-1"><a href="https://www.pib.gov.in/PressReleasePage.aspx?PRID=2127370">PIB — Operation Sindoor: precision strike at terrorist camps</a></li>
+      <li id="src-2"><a href="https://www.pib.gov.in/PressReleasePage.aspx?PRID=2129453">PIB — Operation Sindoor: Forging One Force</a></li>
+      <li id="src-3"><a href="https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/nov/doc20251120699601.pdf">PIB — Defence Atmanirbharta: record production and exports</a></li>
+      <li id="src-4"><a href="https://www.newsonair.gov.in/ministry-of-defence-reports-record-defence-exports-of-%E2%82%B938424-crore-in-fy-2025-26">Ministry of Defence — defence exports, FY 2025–26</a></li>
+      <li id="src-5"><a href="https://www.ism.gov.in/">India Semiconductor Mission</a></li>
+      <li id="src-6"><a href="https://www.pib.gov.in/PressReleasePage.aspx?PRID=2224839">PIB — Digital India: UPI and IndiaAI</a></li>
+      <li id="src-7"><a href="https://www.isro.gov.in/">ISRO — mission archive</a></li>
+      <li id="src-8"><a href="https://en.wikipedia.org/wiki/Akashteer">Akashteer air-defence control system</a></li>
+      <li id="src-9"><a href="https://www.niti.gov.in/node/1630">NITI Aayog — Strategic imperatives for Viksit Bharat @2047</a></li>
+    </ol>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__inner">
+    <div>
+      <p class="foot__title">Viksit Bharat <span lang="hi">विकसित भारत</span></p>
+      <p class="foot__note">
+        Photographs from Wikimedia Commons, used under GODL-India and Creative Commons licences.
+        Every figure on this page links to the government release it came from.
+      </p>
+    </div>
+    <p class="foot__year">1947 — 2047</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
